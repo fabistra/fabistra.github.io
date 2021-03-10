@@ -136,14 +136,15 @@
 
 
     <div class="container">
-        <div class="contact-map" id="map"></div>
+        <!-- <div class="contact-map" id="map"></div> -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.84988248184928!2d72.82889602528486!3d18.94917452310688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce226cdfb171%3A0x96910ccb1609c973!2sSwadeshi%20Market!5e0!3m2!1sen!2sin!4v1615357373148!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 hidden-xs">
             <div class="row">
                 <div class="inner-map">
                     <div class="inner-map-content">
-                        <h1>Contact Us</h1>
+                        <h1>BOOK APPOINTMENT</h1>
                         <hr>
-                        <p>Everything created in simple way</p>
+                        <p>Or drop by our office</p>
                     </div>
                 </div>
             </div>
@@ -159,37 +160,37 @@
                         <i class="pe-7s-phone"></i>
                     </span>
                         <span class="title-info">CALL US:</span>
-                        <span class="description-info">+001 123 222</span>
-                    </div>
+                        <span class="description-info"><a href="tel:+919636062203"> +91 9636062203</a></span>
+                    </div><br>
 
                     <div class="contact-info">
                         <span class="icon-info">
                         <i class="pe-7s-map-marker"></i>
                     </span>
                         <span class="title-info">ADDRESS:</span>
-                        <span class="description-info">Street 23, CITY p.n 300 Canada</span>
-                    </div>
+                        <span class="description-info">Office No.101, 2nd Floor, Swadeshi Market Building, Kalbadevi Road, Mumbai - 2</span>
+                    </div><br>
 
                     <div class="contact-info">
                         <span class="icon-info">
                         <i class="pe-7s-mail"></i>
                     </span>
                         <span class="title-info">EMAIL:</span>
-                        <span class="description-info">info@gmail.com</span>
+                        <span class="description-info"><a href="mailto:fabistra.bespokecraftsmen@gmail.com"> fabistra.bespokecraftsmen@gmail.com</a></span>
                     </div>
                 </div>
 
-                <form method="GET">
+                <form id="test-form">
                     <div class="contact-form">
 
                         <div class="col-md-4">
-                            <input type="text" placeholder="NAME *">
-                            <input type="text" placeholder="E-MAIL *">
-                            <input type="text" placeholder="SUBJECT">
+                            <input type="text" name="full_name" placeholder="NAME *">
+                            <input type="text" name="email_id" placeholder="E-MAIL *">
+                            <input type="text" name="phone_no" placeholder="PHONE NO. *">
                         </div>
                         <div class="col-md-5">
-                            <textarea placeholder="MESSAGE"></textarea>
-                            <input type="submit" value="SEND">
+                            <textarea name="comments" placeholder="ANY MESSAGE"></textarea>
+                            <button type="submit" id="submit-form">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -261,6 +262,7 @@
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/map-costum.js"></script>
+	<script src="js/appointment.js"></script>
 
 </body>
 
