@@ -1,7 +1,7 @@
 var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbxNpy8KJEqp_WyHp2OJJ9bCINWiOXQe4EIM1gq1nr96vu3E5OQ/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#test-form').submit(function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
@@ -9,8 +9,9 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    // do something
+    alert('Submitted! We will get back to you soon.')
   );
+  $('#test-form')[0].reset();
 })
 
 $.fn.serializeObject = function()

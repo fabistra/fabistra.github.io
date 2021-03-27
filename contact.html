@@ -78,10 +78,10 @@
                 <div class="menu-content">
                     <div class="navigation">
                         <span class="pe-7s-close close-menu" id="close-button"></span>
-                        <div class="search-wrap js-ui-search">
-                            <input class="js-ui-text" type="text" placeholder="Search Here...">
-                            <span class="eks js-ui-close"></span>
-                        </div>
+                        <!-- <div class="search-wrap js-ui-search"> -->
+                            <!-- <input class="js-ui-text" type="text" placeholder="Search Here..."> -->
+                            <!-- <span class="eks js-ui-close"></span> -->
+                        <!-- </div> -->
                     </div>
                     <nav class="menu">
                         <div class="menu-list">
@@ -103,7 +103,7 @@
                                         <!-- <li><a href="single-blog.html">Blog Single</a></li> -->
                                     <!-- </ul> -->
                                 <!-- </li> -->
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Book Appointment</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -111,11 +111,11 @@
                     <div class="hidden-xs">
                         <div class="menu-social-media">
                             <ul>
-                               <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-instagram"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-pinterest"></i></a></li>
-                               <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li>
+                               <!-- <li><a href="#"><i class="iconmoon-facebook"></i></a></li> -->
+                               <!-- <li><a href="#"><i class="iconmoon-twitter"></i></a></li> -->
+                               <li><a href="https://www.instagram.com/fabistra_mumbai/" target="_blank"><i class="iconmoon-instagram"></i></a></li>
+                               <!-- <li><a href="#"><i class="iconmoon-pinterest"></i></a></li> -->
+                               <!-- <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li> -->
                             </ul>
                         </div>
 
@@ -136,9 +136,8 @@
 
 
     <div class="container">
-        <!-- <div class="contact-map" id="map"></div> -->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.84988248184928!2d72.82889602528486!3d18.94917452310688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce226cdfb171%3A0x96910ccb1609c973!2sSwadeshi%20Market!5e0!3m2!1sen!2sin!4v1615357373148!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 hidden-xs">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.84988248184928!2d72.82889602528486!3d18.94917452310688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce226cdfb171%3A0x96910ccb1609c973!2sSwadeshi%20Market!5e0!3m2!1sen!2sin!4v1615357373148!5m2!1sen!2sin" width="590" height="400" style="border:2px groove black;" allowfullscreen="" loading="lazy"></iframe>
+		<div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 hidden-xs">
             <div class="row">
                 <div class="inner-map">
                     <div class="inner-map-content">
@@ -180,19 +179,20 @@
                     </div>
                 </div>
 
-                <form id="test-form">
+                <form id="test-form" method="post">
                     <div class="contact-form">
 
                         <div class="col-md-4">
-                            <input type="text" name="full_name" placeholder="NAME *">
-                            <input type="text" name="email_id" placeholder="E-MAIL *">
-                            <input type="text" name="phone_no" placeholder="PHONE NO. *">
+                            <input type="text" name="full_name" placeholder="NAME *" required>
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email_id" placeholder="E-MAIL ID *" required>
+                            <input type="tel" pattern="[0-9]{10}" name="phone_no" placeholder="MOBILE NUMBER *" required>
                         </div>
                         <div class="col-md-5">
                             <textarea name="comments" placeholder="ANY MESSAGE"></textarea>
-                            <button type="submit" id="submit-form">Submit</button>
+                            <input type="submit" value="Submit" id="submit-form">
                         </div>
                     </div>
+					
                 </form>
             </div>
         </div>
@@ -227,12 +227,12 @@
                         <div class="footer-inner">
                             <div class="footer-content">
                             <ul class="social-media">
-                                <li><a href="#"><i class="iconmoon-facebook"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-twitter"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-instagram"></i></a></li>
+                                <!-- <li><a href="#"><i class="iconmoon-facebook"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="iconmoon-twitter"></i></a></li> -->
+                                <li><a href="https://www.instagram.com/fabistra_mumbai/" target="_blank"><i class="iconmoon-instagram"></i></a></li>
                                 <!-- <li><a href="#"><i class="iconmoon-dribbble3"></i></a></li> -->
-                                <li><a href="#"><i class="iconmoon-pinterest"></i></a></li>
-                                <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li>
+                                <!-- <li><a href="#"><i class="iconmoon-pinterest"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="iconmoon-linkedin2"></i></a></li> -->
                             </ul>
                             <span class="copyright-mark">&copy; 2021 FABISTRA, ALL RIGHTS RESERVED</span>
                             </div>

@@ -2831,7 +2831,32 @@ input[type="text"] {
     height: 50px;
     width: 100%;
 }
-
+input[type="email"],
+textarea {
+    border: 1px solid #e6e6e6;
+    padding-left: 10px;
+}
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid #111;
+}
+input[type="email"] {
+    height: 50px;
+    width: 100%;
+}
+input[type="tel"],
+textarea {
+    border: 1px solid #e6e6e6;
+    padding-left: 10px;
+}
+input[type="tel"]:focus,
+textarea:focus {
+    border: 1px solid #111;
+}
+input[type="tel"] {
+    height: 50px;
+    width: 100%;
+}
 /* =Page Not Found
 -------------------------------------------------------------- */
 .page-error{
@@ -2966,6 +2991,12 @@ div.aligncenter {
 .alignleft {
     float: left;
     margin: 5px 20px 20px 0;
+}
+
+div.gmap {
+	border-style: groove;
+	
+	
 }
 
 a img.alignright {
